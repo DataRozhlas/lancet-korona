@@ -1,6 +1,6 @@
 function onChartLoad(e) {
     const plotBack = document.getElementById(e.renderTo.id).getElementsByClassName('highcharts-plot-background')[0];
-    const shouldBeHeight = (plotBack.width.baseVal.value / 2) * 2.5;
+    const shouldBeHeight = (plotBack.width.baseVal.value / 4) * 2.5;
     const heightDiff = shouldBeHeight - plotBack.height.baseVal.value;
     if (heightDiff > 0) {
       document.getElementById(e.renderTo.id).style.height = `${e.chartHeight + heightDiff}px`;
