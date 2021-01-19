@@ -35,7 +35,7 @@ function onChartLoad(e) {
       'ztráta vlasů',
       'ztráta čichu',
       'palpitalions',
-      'bolest kloubů',
+      'bolest kloubů'],
       labels: {
         enabled: true,
       },
@@ -88,7 +88,7 @@ function onChartLoad(e) {
           { y: 22, color: colors['2020'] },
           { y: 11, color: colors['2020'] },
           { y: 9, color: colors['2019'] },
-          { y: 9, color: colors['2020'] },
+          { y: 9, color: colors['2020'] }],
       },
     ],
   });
