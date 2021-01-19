@@ -1,6 +1,6 @@
 function onChartLoad(e) {
     const plotBack = document.getElementById(e.renderTo.id).getElementsByClassName('highcharts-plot-background')[0];
-    const shouldBeHeight = (plotBack.width.baseVal.value / 4) * 3.5;
+    const shouldBeHeight = (plotBack.width.baseVal.value / 3) * 2.5;
     const heightDiff = shouldBeHeight - plotBack.height.baseVal.value;
     if (heightDiff > 0) {
       document.getElementById(e.renderTo.id).style.height = `${e.chartHeight + heightDiff}px`;
@@ -34,7 +34,7 @@ function onChartLoad(e) {
       'problémy se spaním',
       'ztráta vlasů',
       'ztráta čichu',
-      'palpitalions',
+      'tlukot/bušení srdce',
       'bolest kloubů'],
       labels: {
         enabled: true,
@@ -42,7 +42,7 @@ function onChartLoad(e) {
     },
     yAxis: {
       title: {
-        text: '',
+        text: 'procent pacientů souhlasí',
       },
       // labels: {
       //   formatter: function() {
@@ -81,7 +81,7 @@ function onChartLoad(e) {
     },
     series: [
       {
-        name: 'Index závažnosti',
+        name: 'procent pacientů souhlasí',
         data: [{ y: 76, color: colors['2020'] },
           { y: 63, color: colors['2020'] },
           { y: 26, color: colors['2020'] },
