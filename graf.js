@@ -28,6 +28,7 @@ function onChartLoad(e) {
       text: 'Mezi 1733 sledovanými pacienty po hospitalizaci',
       // + '<br><span style="color: #fff">.</span>',
       useHTML: true,
+      align: screenLeft,
     },
     xAxis: {
       categories: ['alespoň jeden z příznaků',
