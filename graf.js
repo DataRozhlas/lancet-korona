@@ -33,7 +33,7 @@ function onChartLoad(e) {
     xAxis: {
       categories: ['alespoň jeden z příznaků',
       'únava, bolest svalů',
-      'problémy se spaním',
+      'problémy se spánkem',
       'ztráta vlasů',
       'ztráta čichu',
       'tlukot/bušení srdce',
