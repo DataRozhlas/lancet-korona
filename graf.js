@@ -1,12 +1,8 @@
-function onChartLoad(e) {
-    const plotBack = document.getElementById(e.renderTo.id).getElementsByClassName('highcharts-plot-background')[0];
-    const shouldBeHeight = (plotBack.width.baseVal.value / 3) * 2.5;
-    const heightDiff = shouldBeHeight - plotBack.height.baseVal.value;
-    if (heightDiff > 0) {
-      document.getElementById(e.renderTo.id).style.height = `${e.chartHeight + heightDiff}px`;
-      e.reflow();
-    }
-  }
+let chartWidth =
+ document.getElementById("graf3").offsetWidth > 600
+   ? 600
+   : document.getElementById("graf3").offsetWidth;
+ 
   
   Highcharts.chart('graf3', {
     chart: {
