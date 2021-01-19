@@ -22,6 +22,7 @@ function onChartLoad(e) {
     title: {
       text: 'Nejčastější komplikace půl roku po covidu',
       useHTML: true,
+      align: screenLeft,
     },
     subtitle: {
       text: 'Mezi 1733 sledovanými pacienty po hospitalizaci',
